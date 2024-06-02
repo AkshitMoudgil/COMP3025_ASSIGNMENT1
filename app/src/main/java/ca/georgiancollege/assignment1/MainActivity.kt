@@ -18,3 +18,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+/*
+ * File name: Assignment 1
+ * Author: Akshit Moudgil
+ * StudentID: 200535888
+ * Date: June 2, 2024
+ * App description: This file contains code and design layout for a Calculator App,
+ * created using Android Studio and the Kotlin programming language.
+ * Right now, the file contains contains the only the UI of the app.
+ * Version information: Version 1
+ */
