@@ -7,13 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x_row1"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="clear"
+            android:text="C"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/equalsButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x_row1"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="equals"
+            android:text="@string/equals"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
