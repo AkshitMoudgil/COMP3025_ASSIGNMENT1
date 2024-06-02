@@ -8,6 +8,47 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/sixthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fifthRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/plusMinusButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="plus_minus"
+            android:text="@string/plus_minus"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp"/>
+
+        <Button
+            android:id="@+id/backspaceButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="backspace"
+            android:text="@string/backspace"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/fifthRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +56,7 @@
         app:layout_constraintBottom_toTopOf="@id/fourthRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/sixthRow">
 
         <Button
             android:id="@+id/sevenButton"
