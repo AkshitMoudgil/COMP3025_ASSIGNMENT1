@@ -5,6 +5,9 @@
     <dimen name="margin_x_row1">5dp</dimen>
     <dimen name="margin_x">10dp</dimen>
     <dimen name="padding_x">0dp</dimen>
+    <dimen name="padding_y">0dp</dimen>
+    <dimen name="result_size">60dp</dimen>
+    <dimen name="result_text">60sp</dimen>
 
 
 </resources>
