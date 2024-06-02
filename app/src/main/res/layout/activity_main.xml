@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintVertical_bias="0.35">
 
 
         <TextView
@@ -28,7 +28,7 @@
             android:fontFamily="@font/fa_solid_900"
             android:gravity="end"
             android:paddingTop="@dimen/padding_y"
-            android:paddingEnd="@dimen/padding_y"
+            android:paddingBottom="@dimen/padding_y"
             android:text="0"
             android:textSize="@dimen/result_text" />
     </LinearLayout>
@@ -48,7 +48,7 @@
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
-            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x_row1and6"
             android:layout_weight="1"
             android:fontFamily="@font/fa_solid_900"
             android:paddingStart="@dimen/padding_x"
@@ -62,7 +62,7 @@
             android:id="@+id/backspaceButton"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginStart="@dimen/margin_x_row1and6"
             android:layout_marginEnd="@dimen/margin_x"
             android:layout_weight="1"
             android:fontFamily="@font/fa_solid_900"
@@ -364,7 +364,7 @@
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
-            android:layout_marginEnd="@dimen/margin_x_row1"
+            android:layout_marginEnd="@dimen/margin_x_row1and6"
             android:layout_weight="1"
             android:fontFamily="@font/fa_solid_900"
             android:paddingStart="@dimen/padding_x"
@@ -378,7 +378,7 @@
             android:id="@+id/equalsButton"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_marginStart="@dimen/margin_x_row1"
+            android:layout_marginStart="@dimen/margin_x_row1and6"
             android:layout_marginEnd="@dimen/margin_x"
             android:layout_weight="1"
             android:fontFamily="@font/fa_solid_900"
