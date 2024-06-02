@@ -8,6 +8,77 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/firstRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/decimalButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="."
+            android:text="."
+            android:textSize="@dimen/button_text"
+            />
+
+        <Button
+            android:id="@+id/zeroButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="0"
+            android:text="0"
+            android:textSize="@dimen/button_text"
+            />
+
+        <Button
+            android:id="@+id/percentButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="percent"
+            android:text="@string/percent"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="minus"
+            android:text="@string/minus"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/firstRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +86,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/secondRow">
 
         <Button
             android:id="@+id/clearButton"
