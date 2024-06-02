@@ -8,6 +8,74 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/fifthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fourthRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/sevenButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="7"
+            android:text="7"
+            android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/eightButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="8"
+            android:text="8"
+            android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/nineButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="9"
+            android:text="9"
+            android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/margin_x"
+            android:layout_marginEnd="@dimen/margin_x"
+            android:layout_weight="1"
+            android:fontFamily="@font/fa_solid_900"
+            android:paddingStart="@dimen/padding_x"
+            android:paddingEnd="@dimen/padding_x"
+            android:tag="divide"
+            android:text="@string/divide"
+            android:textSize="@dimen/button_text"
+            app:cornerRadius="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/fourthRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +83,7 @@
         app:layout_constraintBottom_toTopOf="@id/thirdRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/fifthRow">
 
         <Button
             android:id="@+id/fourButton"
