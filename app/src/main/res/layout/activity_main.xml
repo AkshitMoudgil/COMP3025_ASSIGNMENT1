@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_grey"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -30,6 +31,7 @@
             android:paddingTop="@dimen/padding_y"
             android:paddingBottom="@dimen/padding_y"
             android:text="0"
+            android:textColor="@color/black"
             android:textSize="@dimen/result_text" />
     </LinearLayout>
 
@@ -45,6 +47,7 @@
 
         <Button
             android:id="@+id/plusMinusButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -56,10 +59,11 @@
             android:tag="plus_minus"
             android:text="@string/plus_minus"
             android:textSize="@dimen/button_text"
-            app:cornerRadius="1dp"/>
+            app:cornerRadius="1dp" />
 
         <Button
             android:id="@+id/backspaceButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x_row1and6"
@@ -71,7 +75,7 @@
             android:tag="backspace"
             android:text="@string/backspace"
             android:textSize="@dimen/button_text"
-            app:cornerRadius="1dp"/>
+            app:cornerRadius="1dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,6 +90,7 @@
 
         <Button
             android:id="@+id/sevenButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -100,6 +105,7 @@
 
         <Button
             android:id="@+id/eightButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -114,6 +120,7 @@
 
         <Button
             android:id="@+id/nineButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -128,6 +135,7 @@
 
         <Button
             android:id="@+id/divideButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -139,7 +147,7 @@
             android:tag="divide"
             android:text="@string/divide"
             android:textSize="@dimen/button_text"
-            app:cornerRadius="1dp"/>
+            app:cornerRadius="1dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -154,6 +162,7 @@
 
         <Button
             android:id="@+id/fourButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -168,6 +177,7 @@
 
         <Button
             android:id="@+id/fiveButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -182,6 +192,7 @@
 
         <Button
             android:id="@+id/sixButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -196,6 +207,7 @@
 
         <Button
             android:id="@+id/multiplyButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -207,7 +219,7 @@
             android:tag="multiply"
             android:text="@string/multiply"
             android:textSize="@dimen/button_text"
-            app:cornerRadius="1dp"/>
+            app:cornerRadius="1dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -222,6 +234,7 @@
 
         <Button
             android:id="@+id/oneButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -236,6 +249,7 @@
 
         <Button
             android:id="@+id/twoButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -250,6 +264,7 @@
 
         <Button
             android:id="@+id/threeButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -264,6 +279,7 @@
 
         <Button
             android:id="@+id/plusButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -290,6 +306,7 @@
 
         <Button
             android:id="@+id/decimalButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -300,11 +317,11 @@
             android:paddingEnd="@dimen/padding_x"
             android:tag="."
             android:text="."
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/zeroButton"
+            style="@style/number_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -315,11 +332,11 @@
             android:paddingEnd="@dimen/padding_x"
             android:tag="0"
             android:text="0"
-            android:textSize="@dimen/button_text"
-            />
+            android:textSize="@dimen/button_text" />
 
         <Button
             android:id="@+id/percentButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -335,6 +352,7 @@
 
         <Button
             android:id="@+id/minusButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -361,6 +379,7 @@
 
         <Button
             android:id="@+id/clearButton"
+            style="@style/operation_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x"
@@ -376,6 +395,7 @@
 
         <Button
             android:id="@+id/equalsButton"
+            style="@style/equals_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_marginStart="@dimen/margin_x_row1and6"
